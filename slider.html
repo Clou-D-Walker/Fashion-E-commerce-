@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDER | E-COMMERCE WEBSITE</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- External Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        #containerSlider {
+            margin: auto;
+            width: 90%;
+            padding-top: 50px;
+            box-sizing: border-box;
+        }
+
+        #containerSlider img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 732px) {
+            #containerSlider img {
+                height: 12em;
+            }
+        }
+
+        @media (max-width: 500px) {
+            #containerSlider img {
+                height: 10em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="containerSlider">
+            <div class="sliding-image">
+                <img src="img/img1.png" alt="image1">
+            </div>
+            <div class="sliding-image">
+                <img src="img/img2.png" alt="image2">
+            </div>
+            <div class="sliding-image">
+                <img src="img/img3.png" alt="image3">
+            </div>
+            <div class="sliding-image">
+                <img src="img/img4.png" alt="image4">
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-Lcj9DFBIMxaqxCn1lIxfjBSXkVVq9kY0l+3y+2RZcbk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#containerSlider').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+</body>
+
+</html>
